@@ -9,7 +9,9 @@
     "plugin:react/recommended",
     // Reference: https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
     "plugin:react/jsx-runtime",
-    "standard-with-typescript"
+    "standard-with-typescript",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended"
   ],
   "overrides": [],
   "parserOptions": {
@@ -17,7 +19,7 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["react"],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
     "react/prop-types": 0
   }
